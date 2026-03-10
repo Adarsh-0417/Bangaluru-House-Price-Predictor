@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Bangalore House Price Predictor</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+
+body{
+background:#2f3b45;
+}
+
+.card{
+margin-top:80px;
+padding:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2 class="text-center">
+Welcome to Bangalore House Price Predictor
+</h2>
+
+<br>
+
+<form action="/predict" method="post">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<label>Select Location</label>
+
+<select name="location" class="form-control">
+
+{% for loc in locations %}
+<option value="{{loc}}">{{loc}}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<div class="col-md-6">
+
+<label>Enter BHK</label>
+
+<input type="number"
+name="bhk"
+class="form-control"
+placeholder="Enter BHK"
+required>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<label>Enter Number of Bathrooms</label>
+
+<input type="number"
+name="bath"
+class="form-control"
+placeholder="Enter Bathrooms"
+required>
+
+</div>
+
+<div class="col-md-6">
+
+<label>Enter Total Square Feet</label>
+
+<input type="number"
+name="sqft"
+class="form-control"
+placeholder="Enter Total Sqft"
+required>
+
+</div>
+
+</div>
+
+<br>
+
+<button class="btn btn-primary btn-block">
+Predict Price
+</button>
+
+</form>
+
+<br>
+
+<h4 class="text-center">
+{{ prediction_text }}
+</h4>
+
+</div>
+
+</div>
+
+</body>
+</html>

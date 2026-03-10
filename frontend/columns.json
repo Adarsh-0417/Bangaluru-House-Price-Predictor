@@ -1,0 +1,5 @@
+import pandas as pd
+
+df = pd.read_csv("cleaned_data.csv")
+
+df.to_json("cleaned_data.json", orient="records", indent=4)
