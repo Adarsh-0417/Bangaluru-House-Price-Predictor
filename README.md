@@ -56,22 +56,6 @@ The model was built using the following workflow:
 
 🛠 Tech Stack
 
-Backend
+Backend- Python, Flask, Scikit-learn, Pandas, NumPy
 
-Python
-
-Flask
-
-Scikit-learn
-
-Pandas
-
-NumPy
-
-Frontend
-
-HTML
-
-Bootstrap
-
-Jinja Templates
+Frontend- HTML, Bootstrap, Jinja Templates
