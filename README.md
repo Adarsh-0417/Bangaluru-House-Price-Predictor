@@ -22,37 +22,37 @@ The model was built using the following workflow:
 
 1. Data Cleaning
 
-Removed irrelevant columns
+    Removed irrelevant columns
 
-Handled missing values
+    Handled missing values
 
 2. Feature Engineering
 
-Extracted BHK from size
+    Extracted BHK from size
 
-Converted total_sqft ranges to numeric values
+    Converted total_sqft ranges to numeric values
 
-Created price_per_sqft
+    Created price_per_sqft
 
 3. Outlier Removal
 
-Removed unrealistic sqft values
+    Removed unrealistic sqft values
 
-Removed illogical BHK pricing
+    Removed illogical BHK pricing
 
 4. Model Training
 
-Linear Regression
+    Linear Regression
 
-Lasso Regression
+    Lasso Regression
 
-Ridge Regression
+    Ridge Regression
 
 5. Model Selection
 
-Cross-validation
+    Cross-validation
 
-Performance comparison
+    Performance comparison
 
 🛠 Tech Stack
 
