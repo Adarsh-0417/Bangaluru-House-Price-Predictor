@@ -20,13 +20,13 @@ Flask backend serving predictions
 
 The model was built using the following workflow:
 
-Data Cleaning
+1. Data Cleaning
 
 Removed irrelevant columns
 
 Handled missing values
 
-Feature Engineering
+2. Feature Engineering
 
 Extracted BHK from size
 
@@ -34,13 +34,13 @@ Converted total_sqft ranges to numeric values
 
 Created price_per_sqft
 
-Outlier Removal
+3. Outlier Removal
 
 Removed unrealistic sqft values
 
 Removed illogical BHK pricing
 
-Model Training
+4. Model Training
 
 Linear Regression
 
@@ -48,7 +48,7 @@ Lasso Regression
 
 Ridge Regression
 
-Model Selection
+5. Model Selection
 
 Cross-validation
 
